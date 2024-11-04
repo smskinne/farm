@@ -1,0 +1,355 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/*-------------------- CSS RESET --------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* -------------------- ROOT VARIABLES  -------------------- */
+:root {
+    font-family: "Habibi", serif;
+    font-size: 1.25em;
+    --green:#06A816;
+    --orange:#E75D02;
+    --black:#000000;
+    --white:#ffffff;
+}
+
+/* -------------------- GLOBAL STYLES --------------------*/
+h1{
+    font-family: Irish Grover;
+    font-size: 2.5em;
+}
+h2{
+    font-family: Irish Grover;
+    font-size: 1.75em;
+}
+h3{
+    font-family: Irish Grover;
+    font-size: 1.25em;
+}
+header{
+    background-color: var(--green);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom:20px;
+}
+header h1{
+    text-shadow: #000000 2px 2px 3px;
+}
+header p{
+    font-style: italic;
+    font-weight:bold;
+}
+nav h2{
+    display: none;
+}
+nav ul{
+    display: grid;
+    grid-auto-columns: max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:60px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    background-color: var(--orange);
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:100px;
+    padding-right:100px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+}
+nav li a:hover{
+    background-color: #fc8434;
+}
+#Top a{
+    text-decoration: none;
+    color:var(--white);
+    background-color: var(--orange);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position:fixed;
+    right:0;
+    bottom:10px;
+    z-index: 1;
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 2px;
+}
+#Top a:hover{
+    background-color: #fc8434;
+    border-radius: 10px;
+
+}
+#fruits {
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+h3{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#fruitsForSale{
+    position:relative;
+    display: grid;
+    grid-template-columns:max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#fruitsForSale h3{
+    display: none;
+}
+#fruitsForSale figure figcaption a{
+    text-decoration: none;
+    position:relative;
+    display:block;
+    background-color: hsla(0,0%,0%, 0.5);
+    color:white;
+    top: -175px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right:75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+#fruitsForSale figure figcaption a:hover{
+    background-color: hsla(0,0%,0%, 0.75);
+}
+
+#vegetables {
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+#vegetablesForSale{
+    position:relative;
+    display: grid;
+    grid-template-columns:max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#vegetablesForSale h3{
+    display: none;
+}
+#vegetablesForSale figure figcaption a{
+    text-decoration: none;
+    position:relative;
+    display:block;
+    background-color: hsla(0,0%,0%, 0.5);
+    color:white;
+    background-size: 50px;
+    top: -175px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right:75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+#vegetablesForSale figure figcaption a:hover{
+    background-color: hsla(0,0%,0%, 0.75);
+}
+
+footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    color:var(--white);
+    font-weight: bold;
+    text-align: center;
+    padding-top:50px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+footer #contact{
+    margin-bottom: 50px;
+}
+footer #hours{
+    margin-bottom: 20px;
+}
+footer #hours h2{
+    margin-bottom: 10px;
+}
+footer #hours dl{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    align-items: center;
+}
+footer #hours dt{
+    text-align: right;
+}
+footer #hours dd{
+    text-align: center;
+    grid-column-start: 2;
+}
+#copyright{
+    background-color: var(--white);
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width:834px) {
+    header{
+        flex-direction: row;
+    }
+    nav ul{
+
+        grid-template-columns:max-content max-content;
+        margin-left:50px;
+        margin-right:50px;
+        justify-content: space-around;
+
+    }
+    #fruitsForSale{
+        grid-template-columns: max-content max-content;
+        gap: 50px;
+        justify-content: space-around;
+    }
+    #vegetablesForSale{
+        grid-template-columns: max-content max-content;
+        gap: 50px;
+        justify-content: space-around;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 1280px){
+    #fruitsForSale{
+        grid-template-columns: max-content max-content max-content;
+    }
+    #vegetablesForSale{
+        grid-template-columns: max-content max-content max-content;
+    }
+    header{
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    nav ul{
+        justify-content: flex-end;
+        position: absolute;
+        top:-15px;
+        right:0;
+        gap:50px;
+    }
+    nav li a{
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--white);
+    }
+    footer{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    footer #contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    footer #contact h2{
+        grid-column:1 1;
+    }
+    footer #contact p{
+        grid-column-start: 2;
+    }
+    footer #hours{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width: 1440px) {
+    #fruitsForSale{
+        grid-template-columns: max-content max-content max-content max-content;
+    }
+    #vegetablesForSale{
+        grid-template-columns: max-content max-content max-content max-content;
+    }
+}
