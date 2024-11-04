@@ -265,7 +265,9 @@ footer #hours dd{
     text-align: center;
     margin-bottom: 25px;
     font-weight: bold;
-
+}
+#copyright h2{
+    display: none;
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
@@ -333,7 +335,8 @@ footer #hours dd{
         grid-template-rows: 1fr;
     }
     footer #contact h2{
-        grid-column:1 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
     }
     footer #contact p{
         grid-column-start: 2;
